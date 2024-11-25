@@ -6,10 +6,9 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    scroll-behavior: smooth;
-    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header, section, footer {
@@ -21,7 +20,7 @@ header, section, footer {
 }
 
 header {
-    background: #0078D7;
+    background: #B02124;
     color: white;
 }
 
@@ -30,7 +29,7 @@ header .btn {
     margin: 10px 10px 0;
     padding: 10px 20px;
     background: white;
-    color: #0078D7;
+    color: #B02124;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -69,7 +68,7 @@ ul li {
 }
 
 a {
-    color: #0078D7;
+    color: #B02124;
     text-decoration: none;
 }
 
@@ -109,7 +108,7 @@ a:hover {
 }
 
 #sidebar ul li a:hover {
-    background: #0078D7;
+    background: #B02124;
     color: white;
 }
 
@@ -128,7 +127,7 @@ a:hover {
 }
 
 #contact a {
-    color: #0078D7;
+    color: #B02124;
     text-decoration: none;
 }
 
@@ -169,7 +168,7 @@ td, th {
 }
 
 th {
-    background-color: #0078D7;
+    background-color: #B02124;
     color: #fff;
     text-transform: uppercase;
 }
@@ -239,7 +238,7 @@ th {
 
 .profile-details .btn {
     padding: 12px 24px;
-    background: #0078D7;
+    background: #B02124;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -275,7 +274,7 @@ th {
 .subject-item strong {
     display: block;
     font-size: 18px;
-    color: #0078D7;
+    color: #B02124;
     margin-bottom: 10px;
     text-transform: uppercase;
     background-color: #f0f8ff; /* Light blue background */
@@ -351,7 +350,7 @@ th {
 }
 
 .contact-info a {
-    color: #0078D7;
+    color: #B02124;
     text-decoration: none;
 }
 
@@ -370,3 +369,57 @@ th {
         margin-bottom: 20px;
     }
 }
+
+
+/* Hero Section Styling */
+#hero {
+    font-family: 'Roboto', sans-serif; /* Modern and sleek font */
+    background-color: #F5F0E8; /* Cream */
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80vw; /* Make the logo take up 80% of the viewport width */
+    max-width: 900px; /* Cap the size to prevent it from getting too large on bigger screens */
+    height: auto;
+}
+
+.business-name {
+    font-size: 2.5rem; /* Slightly smaller to balance with large logo */
+    color: #B02124; /* Red */
+    margin-top: 20px;
+}
+
+.slogan {
+    font-size: 1.2rem; /* Reduced to keep focus on the logo */
+    color: #000000; /* Black */
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 24px;
+    background-color: #B02124; /* Red */
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #000000; /* Black */
+}
+
+
