@@ -20,7 +20,7 @@ header, section, footer {
 }
 
 header {
-    background: #B02124;
+    background: #0078D7;
     color: white;
 }
 
@@ -29,7 +29,7 @@ header .btn {
     margin: 10px 10px 0;
     padding: 10px 20px;
     background: white;
-    color: #B02124;
+    color: #0078D7;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -68,7 +68,7 @@ ul li {
 }
 
 a {
-    color: #B02124;
+    color: #0078D7;
     text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ a:hover {
 }
 
 #sidebar ul li a:hover {
-    background: #B02124;
+    background: #0078D7;
     color: white;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 }
 
 #contact a {
-    color: #B02124;
+    color: #0078D7;
     text-decoration: none;
 }
 
@@ -168,7 +168,7 @@ td, th {
 }
 
 th {
-    background-color: #B02124;
+    background-color: #0078D7;
     color: #fff;
     text-transform: uppercase;
 }
@@ -238,7 +238,7 @@ th {
 
 .profile-details .btn {
     padding: 12px 24px;
-    background: #B02124;
+    background: #0078D7;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -274,7 +274,7 @@ th {
 .subject-item strong {
     display: block;
     font-size: 18px;
-    color: #B02124;
+    color: #0078D7;
     margin-bottom: 10px;
     text-transform: uppercase;
     background-color: #f0f8ff; /* Light blue background */
@@ -350,7 +350,7 @@ th {
 }
 
 .contact-info a {
-    color: #B02124;
+    color: #0078D7;
     text-decoration: none;
 }
 
@@ -396,7 +396,7 @@ th {
 
 .business-name {
     font-size: 2.5rem; /* Slightly smaller to balance with large logo */
-    color: #B02124; /* Red */
+    color: #0078D7; /* Red */
     margin-top: 20px;
 }
 
@@ -411,7 +411,7 @@ th {
     display: inline-block;
     margin: 10px 5px;
     padding: 12px 24px;
-    background-color: #B02124; /* Red */
+    background-color: #0078D7; /* Red */
     color: #FFFFFF; /* White */
     text-decoration: none;
     border-radius: 5px;
