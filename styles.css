@@ -136,7 +136,8 @@ a:hover {
     top: 50%;  /* Vertically center the button */
     left: 175px;  /* Position the button directly to the right of the sidebar */
     transform: translateY(-50%) rotate(0deg);  /* Center the button vertically */
-    background-color: #444;
+/*    background-color: #444;*/
+    background: black;
     color: white;
     border: none;
     padding: 10px;
@@ -173,7 +174,7 @@ a:hover {
     width: 250px;
     font-size: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+
     /* Fade-in and fade-out transition */
   opacity: 1;
   visibility: visible;
@@ -186,24 +187,41 @@ a:hover {
 
 #contact-toggle {
     position: fixed;
-    bottom: 15px;
+    bottom: 17px;
     right: 20px;
-    background: #0078D7;
+    background-color: black;
     color: white;
     border: none;
-    padding: 10px;
-    font-size: 12px;
+    padding: 6px;
+    font-size: 15px;
     cursor: pointer;
     border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
 }
 
 #contact-toggle:focus {
     outline: none;
+
 }
 
 #contact.collapsed {
     opacity: 0; /* Make the card transparent */
   visibility: hidden; /* Prevent interaction and hide from layout */
+}
+
+/* Add spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#contact-toggle.spin {
+  animation: spin 0.5s ease-in-out; /* 360-degree spin over 0.5 seconds */
 }
 
 

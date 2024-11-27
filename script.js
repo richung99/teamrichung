@@ -39,7 +39,9 @@ function toggleCollapse() {
   // } else {
   //   button.innerHTML = "←";  // Change button icon back to collapse
   // }
+
 }
+
 
 // Floating contact section toggle functionality
 const contactToggle = document.getElementById("contact-toggle");
@@ -47,4 +49,19 @@ const contactSection = document.getElementById("contact");
 
 contactToggle.addEventListener("click", () => {
     contactSection.classList.toggle("collapsed");
+
+    // Change button icon when contact is collapsed or expanded
+    if (contact.classList.contains('collapsed')) {
+        contactToggle.innerHTML = "📞";  // Change button icon to expand
+    } else {
+        contactToggle.innerHTML = "❌";  // Change button icon back to collapse
+    }
+
+    // Add the spin class to the button
+    contactToggle.classList.add('spin');
+
+    // Remove the spin class after the animation completes (0.5s)
+    setTimeout(() => {
+        contactToggle.classList.remove('spin');
+    }, 500);
 });
