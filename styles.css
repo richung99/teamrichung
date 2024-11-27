@@ -76,7 +76,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Sidebar */
+/* Style for the collapsible sidebar */
 #sidebar {
     position: fixed;
     left: 0;
@@ -85,6 +85,15 @@ a:hover {
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 0 10px 10px 0;
+/*    transition: width 0.3s ease-in-out;*/
+    width: 200px;
+
+     /* Smooth transition for sidebar collapsing */
+  transition: transform 0.4s ease-in-out; /* Smoothly transform the sidebar */
+}
+
+#sidebar-list {
+    display: block;
 }
 
 #sidebar ul {
@@ -112,7 +121,47 @@ a:hover {
     color: white;
 }
 
-/* Floating contact section */
+#sidebar.collapsed {
+/*    width: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;*/
+    transform: translateX(-250px) translateY(-50%); /* Move the sidebar off the screen */
+}
+
+/* Collapsible Sidebar Toggle Button */
+#sidebar-toggle {
+    position: fixed;  /* Keep the button fixed on the screen */
+    top: 50%;  /* Vertically center the button */
+    left: 175px;  /* Position the button directly to the right of the sidebar */
+    transform: translateY(-50%) rotate(0deg);  /* Center the button vertically */
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;  /* Ensure button stays above the content */
+    /* Smooth transition for button movement */
+    transition: left 0.458s ease-in-out, transform 0.3s ease-in-out;  
+
+}
+
+/* Collapsed state for sidebar and button (move the button left) */
+#sidebar-toggle.collapsed {
+  left: 10px;  /* Move button to the left when sidebar is collapsed */
+  transform: translateY(-50%) rotate(-180deg);
+  transition: left 0.3s ease-in-out, transform 0.3s ease-in-out; /* Slow right movement */
+}
+
+#sidebar-toggle:focus {
+    outline: none;
+}
+
+
+/* Collapsible Contact Section */
 #contact {
     position: fixed;
     bottom: 10px;
@@ -124,16 +173,40 @@ a:hover {
     width: 250px;
     font-size: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    /* Fade-in and fade-out transition */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
-#contact a {
-    color: #0078D7;
-    text-decoration: none;
+#contact p {
+    display: block;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+#contact-toggle {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 50%;
 }
+
+#contact-toggle:focus {
+    outline: none;
+}
+
+#contact.collapsed {
+    opacity: 0; /* Make the card transparent */
+  visibility: hidden; /* Prevent interaction and hide from layout */
+}
+
+
 
 /* Increase text spacing */
 .container {
